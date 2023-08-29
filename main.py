@@ -17,9 +17,9 @@ aminoAcidSeq = t.mRNA2AminoAcid(mRNASeq)
 
 print("\nDecoded genetic sequence :\n")
 for i in range(int((len(DNASeq))/3)):
-	print(DNASeq[i*3] + "═══" + cDNASeq[i*3] + " ┐")
-	print(DNASeq[i*3+1] + "═══" + cDNASeq[i*3+1] + " |-> " + aminoAcidSeq[i])
-	print(DNASeq[i*3+2] + "═══" + cDNASeq[i*3+2] + " ┘")
+	print(DNASeq[i*3] + "═══" + cDNASeq[i*3] + " -> " + mRNASeq[i*3] + " ┐")
+	print(DNASeq[i*3+1] + "═══" + cDNASeq[i*3+1] + " -> " + mRNASeq[i*3+1] + " |-> " + aminoAcidSeq[i])
+	print(DNASeq[i*3+2] + "═══" + cDNASeq[i*3+2] + " -> " + mRNASeq[i*3+2] + " ┘")
 	if aminoAcidSeq[i] == "STOP":
 		print("\n~~~~~~~~~~~~~~~\n")
 		
