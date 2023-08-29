@@ -1,4 +1,4 @@
-cDNA = input("Please enter your complimentary DNA sequence")
+cDNA = input("Please enter your complimentary DNA sequence : ")
 mRNASeq = ""
 for i in range(len(cDNA)):
     if cDNA[i] == "T":
