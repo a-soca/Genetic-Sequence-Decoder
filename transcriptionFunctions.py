@@ -76,13 +76,13 @@ def DNA2cDNA(DNA):
 		cDNASeq = cDNASeq + complimentaryPairDict[DNA[i]]
 	return cDNASeq
 	
-def cDNA2mRNA(cDNA):
+def DNA2mRNA(DNA):
 	mRNASeq = ""
-	for i in range(len(cDNA)):
-		if cDNA[i] == "T":
+	for i in range(len(DNA)):
+		if DNA[i] == "T":
 			mRNASeq = mRNASeq + "U"
 		else:
-			mRNASeq = mRNASeq + cDNA[i]
+			mRNASeq = mRNASeq + DNA[i]
 	return mRNASeq
 	
 def mRNA2AminoAcid(mRNA):

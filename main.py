@@ -11,7 +11,7 @@ match int(input("Generate or enter a genetic sequence? [1/2] : ")):
 		
 cDNASeq = t.DNA2cDNA(DNASeq)
 
-mRNASeq = t.cDNA2mRNA(cDNASeq)
+mRNASeq = t.DNA2mRNA(DNASeq)
 
 aminoAcidSeq = t.mRNA2AminoAcid(mRNASeq)
 
